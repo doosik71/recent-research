@@ -37,7 +37,6 @@ Human Pose Estimation
 Image Generation
 Independent Component Analysis
 Javascript
-Lab Seminar
 Large Language Model
 Machine Learning
 Markdown Example
