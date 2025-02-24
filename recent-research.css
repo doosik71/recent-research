@@ -2,6 +2,10 @@ a:hover {
   text-decoration: none;
 }
 
+a:visited {
+  color: darkorange;
+}
+
 .button-link {
   border: none;
   border-radius: 0.2em;
