@@ -13,14 +13,20 @@
   <div class="container">
     <h1 class="my-3 text-center">Recent Research</h1>
     <div class="input-group">
-      <label class="input-group-text c-2" for="research-topic">Topic</label>
+      <label class="input-group-text col-1" for="research-topic">Topic</label>
       <input type="text" id="research-topic" placeholder="Topic to search..." class="col-10" />
-      <button class="btn btn-outline-secondary c-2" type="button" onclick="getArxivList()">Search</button>
+      <button class="btn btn-outline-secondary col-1" type="button" onclick="getArxivList()">Search</button>
     </div>
     <div class="input-group mb-5">
-      <label class="input-group-text c-2 invisible">Topic</label>
+      <label class="input-group-text col-1 invisible">Topic</label>
       <select title="Choose topic" class="form-select bg-light col-10" onchange="setInputValue('research-topic', this.value);">
         <option selected>Choose topic...</option>
+      </select>
+      <select title="Choose topic" class="form-select bg-light col-1 text-center" onchange="maxResults = this.value;">
+        <option selected>10</option>
+        <option>20</option>
+        <option>50</option>
+        <option>100</option>
       </select>
     </div>
     <hr/>

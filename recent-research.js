@@ -1,3 +1,5 @@
+var maxResults = 10;
+
 function addTopicOptionsFromFile(file) {
   fetch(file)
     .then(response => response.text())
@@ -24,8 +26,7 @@ async function getArxivList() {
   arxivList.innerHTML = 'Searching...';
 
   const researchTopic = document.getElementById('research-topic').value;
-  const max_results = 5;
-  const url = `https://export.arxiv.org/api/query?search_query=all:${researchTopic}&start=0&max_results=${max_results}&sortBy=relevance&sortOrder=descending`;
+  const url = `https://export.arxiv.org/api/query?search_query=all:${researchTopic}&start=0&max_results=${maxResults}&sortBy=relevance&sortOrder=descending`;
   const response = await fetch(url);
   const data = await response.text();
   const parser = new DOMParser();
