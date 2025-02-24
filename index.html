@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recent Research</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="recent-research.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="my-3 text-center">Recent Research</h1>
+    <div class="input-group">
+      <label class="input-group-text c-2" for="research-topic">Topic</label>
+      <input type="text" id="research-topic" placeholder="Topic to search..." class="col-10" />
+      <button class="btn btn-outline-secondary c-2" type="button" onclick="getArxivList()">Search</button>
+    </div>
+    <div class="input-group mb-5">
+      <label class="input-group-text c-2 invisible">Topic</label>
+      <select title="Choose topic" class="form-select bg-light col-10" onchange="setInputValue('research-topic', this.value);">
+        <option selected>Choose topic...</option>
+      </select>
+    </div>
+    <hr/>
+    <div id="arxiv-list"></div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="recent-research.js"></script>
+</body>
+
+</html>

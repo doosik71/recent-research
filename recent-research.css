@@ -1,0 +1,37 @@
+a:hover {
+  text-decoration: none;
+}
+
+.button-link {
+  border: none;
+  border-radius: 0.2em;
+  color: white;
+  font-size: smaller;
+  opacity: 0.7;
+  padding: 0.05em 0.25em;
+}
+
+.button-link:hover {
+  color: white;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.pdf {
+  background-color: firebrick;
+}
+
+.google {
+  background-color: darkblue;
+}
+
+.translate {
+  background-color: dodgerblue;
+}
+
+hr {
+  border-color: gray;
+  margin: 0.5em auto;
+  opacity: 0.5;
+  width: 50%;
+}
